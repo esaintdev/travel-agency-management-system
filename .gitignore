@@ -1,0 +1,78 @@
+# M25 Travel & Tours Agency - Git Ignore File
+
+# Sensitive Configuration Files
+config.php
+database-config.php
+.env
+.env.local
+
+# Database Backups
+*.sql.backup
+*.sql.bak
+backups/
+database_backups/
+
+# Uploaded Files & Documents
+uploads/
+client_documents/
+documents/
+files/
+sql/
+
+# Logs
+*.log
+logs/
+error.log
+access.log
+
+# Cache Files
+cache/
+tmp/
+temp/
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# PHP Specific
+vendor/
+composer.lock
+.phpunit.result.cache
+
+# Node.js (if using any build tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Backup Files
+*.bak
+*.backup
+*.old
+
+# Test Files
+test-*.php
+debug-*.php
+*-test.php
+
+# Temporary Files
+*.tmp
+*.temp
+
+# Documentation (already cleaned up)
+*-SUMMARY.md
+*-AUDIT.md
+*-FIXES.md
+*-UPDATES.md

@@ -1,0 +1,122 @@
+# Enable the rewrite engine
+RewriteEngine On
+RewriteBase /
+
+# Maintenance Mode - Add these rules at the top for priority
+# Check if maintenance file exists and redirect to maintenance page
+RewriteCond %{REQUEST_URI} !^/maintenance\.php$
+RewriteCond %{REQUEST_URI} !^/css/maintenance\.css$
+RewriteCond %{REQUEST_URI} !^/css/bootstrap\.min\.css$
+RewriteCond %{REQUEST_URI} !^/admin-login\.php$
+RewriteCond %{REQUEST_URI} !^/admin-login$
+RewriteCond %{DOCUMENT_ROOT}/.maintenance -f
+RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1$
+RewriteCond %{REMOTE_ADDR} !^::1$
+RewriteRule ^(.*)$ /maintenance.php [R=503,L]
+
+# Set 503 status for maintenance page
+RewriteCond %{REQUEST_URI} ^/maintenance\.php$
+RewriteRule ^(.*)$ - [R=503,L]
+
+# Force HTTPS (SiteGround)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Remove trailing slashes
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [R=301,L]
+
+# Handle homepage requests
+RewriteRule ^index/?$ index.php [NC,L]
+
+# Redirect old .html URLs to clean URLs (301 permanent redirect)
+RewriteRule ^about\.html$ /about [R=301,L]
+RewriteRule ^contact\.html$ /contact [R=301,L]
+RewriteRule ^service\.html$ /service [R=301,L]
+RewriteRule ^feature\.html$ /feature [R=301,L]
+RewriteRule ^countries\.html$ /countries [R=301,L]
+RewriteRule ^testimonial\.html$ /testimonial [R=301,L]
+RewriteRule ^training\.html$ /training [R=301,L]
+RewriteRule ^404\.html$ /404 [R=301,L]
+RewriteRule ^admin-login\.html$ /admin-login [R=301,L]
+
+# Remove .php extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    Header unset Server
+    Header unset X-Powered-By
+</IfModule>
+
+# Allow access to PHP files
+<FilesMatch "\.(php|html?)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Block access to sensitive files
+<FilesMatch "^(config|database|\.ht|readme|composer|package)\.(php|json|md|lock|dist)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# GZIP Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Browser Caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/x-javascript "access plus 1 month"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresDefault "access plus 2 days"
+</IfModule>
+
+# Disable directory browsing
+Options -Indexes
+
+# Prevent access to sensitive directories
+<IfModule mod_rewrite.c>
+    RewriteRule ^(config|includes|core|logs)/.*$ - [F,L]
+</IfModule>
+
+# SiteGround PHP settings
+<IfModule mod_php8.c>
+    php_value upload_max_filesize 10M
+    php_value post_max_size 12M
+    php_value max_execution_time 300
+    php_value max_input_vars 3000
+    php_value memory_limit 256M
+</IfModule>
+
+# Custom error pages
+ErrorDocument 403 /403.php
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php

@@ -1,0 +1,9 @@
+# Maintenance Mode Configuration
+# Delete this file or rename it to disable maintenance mode
+# Created on: <?php echo date('Y-m-d H:i:s'); ?>
+
+MAINTENANCE_MODE=true
+MAINTENANCE_MESSAGE="We're currently performing scheduled maintenance to improve our services."
+ESTIMATED_COMPLETION="2-4 hours"
+ADMIN_IPS="127.0.0.1,::1"
+ALLOWED_PATHS="/admin-login,/maintenance"

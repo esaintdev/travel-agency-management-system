@@ -1,0 +1,109 @@
+[27-Oct-2025 16:19:19 UTC] Database connection failed: SQLSTATE[HY000] [2002] No such file or directory
+[27-Oct-2025 16:36:31 UTC] Database connection failed: SQLSTATE[HY000] [2002] No such file or directory
+[27-Oct-2025 16:56:37 UTC] Database connection failed: SQLSTATE[HY000] [2002] No such file or directory
+[27-Oct-2025 17:09:45 UTC] Failed login attempt for username: admin from IP: 105.112.210.245
+[27-Oct-2025 17:09:49 UTC] Failed login attempt for username: admin from IP: 105.112.210.245
+[27-Oct-2025 21:08:39 UTC] Failed login attempt for username: admin from IP: 105.112.218.52
+[27-Oct-2025 21:23:26 UTC] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/customer/www/wp.m25travelagency.com/public_html/config.php on line 3
+[27-Oct-2025 21:23:26 UTC] Registration error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'child1_address' in 'field list'
+[27-Oct-2025 21:23:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/customer/www/wp.m25travelagency.com/public_html/config.php:3) in /home/customer/www/wp.m25travelagency.com/public_html/process-registration.php on line 205
+[27-Oct-2025 21:34:11 UTC] Registration error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'child1_address' in 'field list'
+[27-Oct-2025 21:36:58 UTC] Registration error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'child1_address' in 'field list'
+[27-Oct-2025 21:51:42 UTC] New client registered: ID 1, Reference: M25-2025-5004, Email: admin@gmail.com
+[27-Oct-2025 21:55:33 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/wp.m25travelagency.com/public_html/admin-client-view.php on line 265
+[27-Oct-2025 21:55:33 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/wp.m25travelagency.com/public_html/admin-client-view.php on line 497
+[29-Oct-2025 13:09:39 UTC] New client registered: ID 2, Reference: M25-2025-5782, Email: MichaelNG@gmail.com
+[29-Oct-2025 13:09:39 UTC] PHP Warning:  fsockopen(): php_network_getaddresses: getaddrinfo for smtp.siteground.com failed: Name or service not known in /home/customer/www/m25travelagency.com/public_html/includes/PHPMailer.php on line 31
+[29-Oct-2025 13:09:39 UTC] PHP Warning:  fsockopen(): Unable to connect to smtp.siteground.com:587 (php_network_getaddresses: getaddrinfo for smtp.siteground.com failed: Name or service not known) in /home/customer/www/m25travelagency.com/public_html/includes/PHPMailer.php on line 31
+[29-Oct-2025 13:09:39 UTC] PHPMailer Error: Could not connect to SMTP server: php_network_getaddresses: getaddrinfo for smtp.siteground.com failed: Name or service not known (0)
+[29-Oct-2025 13:09:39 UTC] Failed to send registration confirmation email to: MichaelNG@gmail.com
+[29-Oct-2025 13:09:39 UTC] Failed to send registration confirmation email to: MichaelNG@gmail.com
+[29-Oct-2025 13:09:39 UTC] PHP Warning:  fsockopen(): php_network_getaddresses: getaddrinfo for smtp.siteground.com failed: Name or service not known in /home/customer/www/m25travelagency.com/public_html/includes/PHPMailer.php on line 31
+[29-Oct-2025 13:09:39 UTC] PHP Warning:  fsockopen(): Unable to connect to smtp.siteground.com:587 (php_network_getaddresses: getaddrinfo for smtp.siteground.com failed: Name or service not known) in /home/customer/www/m25travelagency.com/public_html/includes/PHPMailer.php on line 31
+[29-Oct-2025 13:09:39 UTC] PHPMailer Error: Could not connect to SMTP server: php_network_getaddresses: getaddrinfo for smtp.siteground.com failed: Name or service not known (0)
+[29-Oct-2025 13:09:39 UTC] Failed to send admin notification email for: M25-2025-5782
+[29-Oct-2025 13:09:39 UTC] Failed to send admin notification email for registration: M25-2025-5782
+[29-Oct-2025 13:09:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/customer/www/m25travelagency.com/public_html/includes/PHPMailer.php:31) in /home/customer/www/m25travelagency.com/public_html/process-registration.php on line 171
+[29-Oct-2025 14:29:51 UTC] Registration error: An account with this email address already exists.
+[29-Oct-2025 14:29:51 UTC] POST data: Array
+(
+    [full_name] => Esaintss
+    [gender] => Male
+    [date_of_birth] => 2025-10-17
+    [country] => UYo
+    [mobile_number] => 903946934
+    [our_number_for_client] => 46
+    [client_email] => MichaelNG@gmail.com
+    [our_email] => m25@gmail.com
+    [password] => SEOprojects@2026M
+    [ghana_card_number] => 63466
+    [momo_number] => 6436
+    [passport_number] => 4636
+    [visa_type] => Visit
+    [work_type] => brbg
+    [date_contract_started] => 2025-10-17
+    [visa_application_hold] => No
+    [visa_denial_appeal] => No
+    [immigration_history] => 
+    [result_outcome] => 
+    [deposit_paid] => 
+    [balance_due] => 
+    [address] => rheheh
+    [bank_name] => erhe
+    [bank_branch] => erhe
+    [account_name] => reh
+    [account_number] => 5645
+    [visa_pin] => 54
+    [spouse_name] => 
+    [spouse_dob] => 
+    [spouse_address] => 
+    [spouse_status] => 
+    [father_name] => 
+    [father_dob] => 
+    [father_address] => 
+    [father_status] => 
+    [mother_name] => 
+    [mother_dob] => 
+    [mother_address] => 
+    [mother_status] => 
+    [child1_name] => 
+    [child1_dob] => 
+    [child2_name] => 
+    [child2_dob] => 
+    [child3_name] => 
+    [child3_dob] => 
+)
+
+[30-Oct-2025 16:51:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbwceop89t7wf2.visa_content' doesn't exist in /home/customer/www/m25travelagency.com/public_html/config.php:71
+Stack trace:
+#0 /home/customer/www/m25travelagency.com/public_html/config.php(71): PDO->prepare('SELECT * FROM v...')
+#1 /home/customer/www/m25travelagency.com/public_html/admin-visa-content.php(134): Database->prepare('SELECT * FROM v...')
+#2 {main}
+  thrown in /home/customer/www/m25travelagency.com/public_html/config.php on line 71
+[30-Oct-2025 17:02:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbwceop89t7wf2.visa_content' doesn't exist in /home/customer/www/m25travelagency.com/public_html/config.php:71
+Stack trace:
+#0 /home/customer/www/m25travelagency.com/public_html/config.php(71): PDO->prepare('SELECT * FROM v...')
+#1 /home/customer/www/m25travelagency.com/public_html/admin-visa-content.php(134): Database->prepare('SELECT * FROM v...')
+#2 {main}
+  thrown in /home/customer/www/m25travelagency.com/public_html/config.php on line 71
+[30-Oct-2025 17:06:59 UTC] Visa content query error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbwceop89t7wf2.visa_content' doesn't exist
+[31-Oct-2025 14:57:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Database::exec() in /home/customer/www/m25travelagency.com/public_html/includes/CountryAPI.php:255
+Stack trace:
+#0 /home/customer/www/m25travelagency.com/public_html/countries.php(11): CountryAPI->createCacheTable()
+#1 {main}
+  thrown in /home/customer/www/m25travelagency.com/public_html/includes/CountryAPI.php on line 255
+[31-Oct-2025 15:03:04 UTC] PHP Warning:  Undefined array key 0 in /home/customer/www/m25travelagency.com/public_html/countries.php on line 214
+[31-Oct-2025 15:03:04 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/m25travelagency.com/public_html/countries.php on line 226
+[31-Oct-2025 15:51:33 UTC] Failed to fetch API: https://pixabay.com/api/?key=9656065-a4094594c88b1f2df&q=Afghanistan+tourism+landmarks&image_type=photo&category=places&per_page=3&safesearch=true
+[31-Oct-2025 15:55:26 UTC] Failed to fetch API: https://pixabay.com/api/?key=9656065-a4094594c88b1f2df&q=Argentina+tourism+landmarks&image_type=photo&category=places&per_page=3&safesearch=true
+[31-Oct-2025 15:58:57 UTC] Failed to fetch API: https://pixabay.com/api/?key=9656065-a4094594c88b1f2df&q=Nigeria+tourism+landmarks&image_type=photo&category=places&per_page=3&safesearch=true
+[01-Nov-2025 18:06:21 UTC] PHP Warning:  fsockopen(): php_network_getaddresses: getaddrinfo for smtp.siteground.com failed: Name or service not known in /home/customer/www/m25travelagency.com/public_html/includes/EmailService.php on line 268
+[01-Nov-2025 18:06:21 UTC] PHP Warning:  fsockopen(): Unable to connect to smtp.siteground.com:587 (php_network_getaddresses: getaddrinfo for smtp.siteground.com failed: Name or service not known) in /home/customer/www/m25travelagency.com/public_html/includes/EmailService.php on line 268
+[01-Nov-2025 18:15:55 UTC] Registration confirmation email sent to: esaint.song@gmail.com
+[01-Nov-2025 18:23:01 UTC] Registration confirmation email sent to: esaint.designer@gmail.com
+[01-Nov-2025 18:34:50 UTC] Failed to fetch API: https://pixabay.com/api/?key=9656065-a4094594c88b1f2df&q=Armenia+tourism+landmarks&image_type=photo&category=places&per_page=3&safesearch=true
+[01-Nov-2025 18:52:14 UTC] Registration confirmation email sent to: esaint.designer@gmail.com
+[01-Nov-2025 18:58:44 UTC] Failed to fetch API: https://pixabay.com/api/?key=9656065-a4094594c88b1f2df&q=United+States+tourism+landmarks&image_type=photo&category=places&per_page=3&safesearch=true
+[01-Nov-2025 18:58:45 UTC] Failed to fetch API: https://en.wikipedia.org/api/rest_v1/page/summary/United+States
+[01-Nov-2025 19:17:36 UTC] Popup form notification email sent for: Esaint
+[01-Nov-2025 19:17:36 UTC] Popup form submitted: Name: Esaint, Email: esaint.designer@gmail.com, Country: France

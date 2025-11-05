@@ -1,0 +1,23 @@
+{
+    "project": "M25 Travel & Tour Agency",
+    "version": "1.0.0",
+    "deployment_date": "2025-10-27T10:33:56Z",
+    "files_included": [
+        "*.php",
+        "*.html", 
+        "*.sql",
+        "css/",
+        "js/",
+        "img/",
+        "lib/",
+        ".htaccess",
+        "uploads/ (empty)",
+        "logs/ (empty)"
+    ],
+    "requirements": {
+        "php": ">=7.4",
+        "mysql": ">=5.7",
+        "apache": ">=2.4",
+        "modules": ["mod_rewrite", "mod_headers", "mod_deflate", "mod_expires"]
+    }
+}
