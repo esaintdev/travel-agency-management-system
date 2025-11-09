@@ -116,42 +116,7 @@ try {
 </head>
 
 <body>
-    <div class="container-fluid p-0">
-        <div class="row g-0">
-            <!-- Sidebar -->
-            <div class="col-md-3 col-lg-2 sidebar">
-                <div class="p-3 text-center border-bottom border-secondary">
-                    <h5 class="text-white mb-0">M25 Admin</h5>
-                    <small class="text-light">Travel & Tour Agency</small>
-                </div>
-                
-                <nav class="nav flex-column">
-                    <a class="nav-link" href="admin-dashboard.php">
-                        <i class="fas fa-tachometer-alt me-2"></i>Dashboard
-                    </a>
-                    <a class="nav-link active" href="admin-clients.php">
-                        <i class="fas fa-users me-2"></i>All Clients
-                    </a>
-                    <a class="nav-link" href="admin-search.php">
-                        <i class="fas fa-search me-2"></i>Search Clients
-                    </a>
-                    <a class="nav-link" href="admin-documents.php">
-                        <i class="fas fa-files me-2"></i>All Documents
-                    </a>
-                    <a class="nav-link" href="admin-export.php">
-                        <i class="fas fa-download me-2"></i>Export Data
-                    </a>
-                    <a class="nav-link" href="admin-settings.php">
-                        <i class="fas fa-cog me-2"></i>Settings
-                    </a>
-                    <a class="nav-link" href="admin-logout.php">
-                        <i class="fas fa-sign-out-alt me-2"></i>Logout
-                    </a>
-                </nav>
-            </div>
-            
-            <!-- Main Content -->
-            <div class="col-md-9 col-lg-10 main-content">
+    <?php include 'includes/admin-sidebar.php'; ?>
                 <!-- Top Navbar -->
                 <nav class="navbar navbar-expand-lg top-navbar">
                     <div class="container-fluid">
@@ -178,6 +143,13 @@ try {
                         <a href="admin-client-edit.php?id=<?php echo urlencode($client['reference_id']); ?>" class="btn btn-primary">
                             <i class="fas fa-edit me-2"></i>Edit Client
                         </a>
+                        <?php if (in_array($_SESSION['admin_role'], ['Super Admin', 'Admin']) && $client['status'] === 'Active'): ?>
+                        <a href="admin-login-as-client.php?client_id=<?php echo urlencode($client['reference_id']); ?>" 
+                           class="btn btn-success"
+                           onclick="return confirm('Login as <?php echo htmlspecialchars($client['full_name']); ?>?\n\nThis will switch you to their client dashboard.')">
+                            <i class="fas fa-sign-in-alt me-2"></i>Login as Client
+                        </a>
+                        <?php endif; ?>
                         <button class="btn btn-danger" onclick="confirmDelete('<?php echo htmlspecialchars($client['reference_id']); ?>', '<?php echo htmlspecialchars($client['full_name']); ?>')">
                             <i class="fas fa-trash me-2"></i>Delete Client
                         </button>
@@ -603,5 +575,6 @@ try {
             }
         }
     </script>
+    <?php include 'includes/admin-sidebar-close.php'; ?>
 </body>
 </html>

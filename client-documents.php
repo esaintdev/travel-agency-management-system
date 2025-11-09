@@ -237,65 +237,24 @@ if ($client_data) {
             border-radius: 5px;
             padding: 8px;
         }
-        .navbar-brand h1 {
-            font-size: 1.5rem;
+        /* Sidebar layout adjustments */
+        .document-container {
+            margin-left: 0;
+            padding-left: 0;
         }
-        @media (max-width: 768px) {
-            .navbar-brand h1 {
-                font-size: 1.2rem;
-            }
+        
+        .container-fluid {
+            padding-left: 15px;
+            padding-right: 15px;
         }
     </style>
 </head>
 
 <body>
-    <!-- Navigation Start -->
-    <div class="container-fluid bg-primary px-5 d-none d-lg-block">
-        <div class="row gx-0 align-items-center">
-            <div class="col-lg-5 text-center text-lg-start mb-lg-0">
-                <div class="d-flex">
-                    <a href="mailto:info@m25travelagency.com" class="text-muted me-4"><i class="fas fa-envelope text-secondary me-2"></i>info@m25travelagency.com</a>
-                    <a href="tel:+233592605752" class="text-muted me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>+233 592 605 752</a>
-                </div>
-            </div>
-            <div class="col-lg-7 text-center text-lg-end">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-user me-1"></i>Welcome, <?php echo htmlspecialchars($client_data['full_name']); ?></small>
-                    <a href="client-logout.php" class="btn btn-sm btn-outline-light"><i class="fas fa-sign-out-alt me-1"></i>Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top px-4 px-lg-5 py-lg-0">
-        <a href="/" class="navbar-brand p-0">
-            <h1 class="text-primary m-0"><i class="fas fa-globe-americas me-3"></i>M25 Travel & Tours Agency</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="fa fa-bars"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="client-dashboard.php" class="nav-item nav-link"><i class="fas fa-tachometer-alt me-1"></i>Dashboard</a>
-                <a href="client-documents.php" class="nav-item nav-link active"><i class="fas fa-file-upload me-1"></i>Documents</a>
-                <a href="client-profile.php" class="nav-item nav-link"><i class="fas fa-user me-1"></i>Profile</a>
-                <a href="client-status.php" class="nav-item nav-link"><i class="fas fa-info-circle me-1"></i>Application Status</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-cog me-1"></i>Settings</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="client-profile-edit.php" class="dropdown-item">Edit Profile</a>
-                        <a href="client-change-password.php" class="dropdown-item">Change Password</a>
-                        <hr class="dropdown-divider">
-                        <a href="client-logout.php" class="dropdown-item">Logout</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Navigation End -->
+    <?php include 'includes/client-sidebar.php'; ?>
 
     <div class="document-container">
-        <div class="container">
+        <div class="container-fluid">
             <?php if (isset($error_message)): ?>
                 <div class="row justify-content-center">
                     <div class="col-md-8">
@@ -737,5 +696,6 @@ if ($client_data) {
             select.focus();
         }
     </script>
+    <?php include 'includes/client-sidebar-close.php'; ?>
 </body>
 </html>

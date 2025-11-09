@@ -267,37 +267,31 @@ $client_currency = getUserPreferredCurrency($db, 'client', $client['id']);
         .modal-body .alert {
             border-radius: 10px;
         }
+        
+        /* Fix container width for sidebar layout */
+        .container {
+            max-width: 100% !important;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        .dashboard-header .container,
+        .main-content .container {
+            margin-left: 0;
+            margin-right: 0;
+        }
     </style>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top px-4 px-lg-5 shadow-sm">
-        <a href="client-dashboard.php" class="navbar-brand d-flex align-items-center">
-            <h4 class="mb-0 text-primary"><i class="fas fa-globe-americas me-2"></i>M25 Travel & Tours Agency</h4>
-        </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="client-dashboard.php" class="nav-item nav-link active">Dashboard</a>
-                <a href="client-profile.php" class="nav-item nav-link">Profile</a>
-                <a href="client-documents.php" class="nav-item nav-link">Documents</a>
-                <a href="/" class="nav-item nav-link">Home</a>
-                <a href="client-logout.php" class="btn btn-logout ms-3">
-                    <i class="fas fa-sign-out-alt me-1"></i>Logout
-                </a>
-            </div>
-        </div>
-    </nav>
+    <?php include 'includes/client-sidebar.php'; ?>
 
     <!-- Dashboard Header -->
-    <div class="dashboard-header">
+    <div class="dashboard-header" style="margin-left: 0; padding-left: 0;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-8">
-                    <h1 class="display-6 mb-2">Welcome back, <?php echo htmlspecialchars($client['full_name']); ?>!</h1>
+                    <h1 class="display-6 mb-2">Welcome Back, <?php echo htmlspecialchars($client['full_name']); ?>!</h1>
                     <p class="lead mb-0">Reference ID: <strong><?php echo htmlspecialchars($client['reference_id']); ?></strong></p>
                     <p class="mb-0">Visa Type: <strong><?php echo htmlspecialchars($client['visa_type']); ?></strong></p>
                 </div>
@@ -686,5 +680,7 @@ $client_currency = getUserPreferredCurrency($db, 'client', $client['id']);
             this.submitted = true;
         });
     </script>
+    
+    <?php include 'includes/client-sidebar-close.php'; ?>
 </body>
 </html>

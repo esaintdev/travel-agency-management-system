@@ -135,27 +135,7 @@ if (!$client) {
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top px-4 px-lg-5 shadow-sm">
-        <a href="client-dashboard.php" class="navbar-brand d-flex align-items-center">
-            <h4 class="mb-0 text-primary"><i class="fas fa-plane me-2"></i>M25 Travel Agency</h4>
-        </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="client-dashboard.php" class="nav-item nav-link">Dashboard</a>
-                <a href="client-profile.php" class="nav-item nav-link active">Profile</a>
-                <a href="client-documents.php" class="nav-item nav-link">Documents</a>
-                <a href="/" class="nav-item nav-link">Home</a>
-                <a href="client-logout.php" class="btn btn-logout ms-3">
-                    <i class="fas fa-sign-out-alt me-1"></i>Logout
-                </a>
-            </div>
-        </div>
-    </nav>
-
+    <?php include 'includes/client-sidebar.php'; ?>
     <!-- Profile Header -->
     <div class="profile-header">
         <div class="container">
@@ -439,5 +419,6 @@ if (!$client) {
             alert('Password change feature coming soon! Please contact support to change your password.');
         }
     </script>
+    <?php include 'includes/client-sidebar-close.php'; ?>
 </body>
 </html>

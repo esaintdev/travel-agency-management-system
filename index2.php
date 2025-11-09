@@ -133,6 +133,15 @@
                         <a href="tel:+233592605752" class="text-muted me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>+233 59 260 5752</a>
                     </div>
                 </div>
+                <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="https://x.com/M25And42551"><i class="fab fa-twitter fw-normal text-secondary"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=61560365438024"><i class="fab fa-facebook-f fw-normal text-secondary"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="https://www.instagram.com/mtravelandtouragency/"><i class="fab fa-instagram-in fw-normal text-secondary"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="https://www.tiktok.com/@m25travelandtour"><i class="fab fa-tiktok fw-normal text-secondary"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle" href="https://www.youtube.com/@M25TravelandTourAgency"><i class="fab fa-youtube fw-normal text-secondary"></i></a>
+                    </div>
+                </div>
                 
                 <div class="col-lg-4 text-center text-lg-end">
                     <div class="d-inline-flex align-items-center" style="height: 45px;">
@@ -164,7 +173,7 @@
         <div class="container-fluid nav-bar p-0">
             <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
                 <a href="/" class="navbar-brand p-0">
-                    <h4 class="text-secondary m-0"><img src="img/brand-logo.png" class="img-fluid" alt="">M25 Travel Agency</h4>
+                    <h4 class="text-secondary m-0"><img src="img/brand-logo.png" class="img-fluid" alt="">M25 Travel and Tours Agency</h4>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -177,7 +186,7 @@
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
                             <div class="dropdown-menu m-0">
                                 <a href="about" class="dropdown-item">About</a>
-                                <a href="feature" class="dropdown-item">Features</a>
+                                <a href="blog" class="dropdown-item">Blog</a>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
@@ -186,15 +195,19 @@
                                 <a href="service" class="dropdown-item">Service</a>
                                 <a href="countries" class="dropdown-item">Countries</a>
                                 <a href="testimonial" class="dropdown-item">Testimonial</a>
-                                <a href="training" class="dropdown-item">Training</a>
-                            </div>
+                                <a href="faq" class="dropdown-item">FAQ</a>
+                                <a href="privacy-policy" class="dropdown-item">Privacy Policy</a>
+                                <a href="terms-conditions" class="dropdown-item">Terms & Conditions</a>
+                                <a href="legal-disclaimer" class="dropdown-item">Legal Disclaimer</a>
+                                <a href="refund-policy" class="dropdown-item">Refund Policy</a>
+                                <a href="client-service-agreement" class="dropdown-item">Client Service Agreement</a>
+                            </div> 
                         </div>
                         <a href="contact" class="nav-item nav-link">Contact</a>
                     </div>
                     <button class="btn btn-primary btn-md-square border-secondary mb-3 mb-md-3 mb-lg-0 me-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
                     <button class="btn btn-secondary btn-md-square border-secondary mb-3 mb-md-3 mb-lg-0 me-3" onclick="shareWebsite()" title="Share Website"><i class="fas fa-share-alt"></i></button>
                     
-                    <a href="client-login.php" class="btn btn-outline-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0 me-2">Client Login</a>
                     <a href="client-registration" class="btn btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0">Get A Form</a>
                 </div>
             </nav>
@@ -271,8 +284,8 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header bg-primary text-white">
-                        <h5 class="modal-title" id="popupModalLabel">
-                            <i class="fas fa-plane me-2"></i>Plan Your Journey
+                        <h5 class="modal-title text-white" id="popupModalLabel">
+                            <i class="fas fa-plane me-2 text-white">Start Here Get Quick responds</i>
                         </h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -469,7 +482,7 @@
                         <div class="service-item">
                             <div class="service-inner">
                                 <div class="service-img">
-                                    <img src="img/service-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <img src="img/job.png" class="img-fluid w-100 rounded" alt="Image">
                                 </div>
                                 <div class="service-title">
                                     <div class="service-title-name">
@@ -493,7 +506,7 @@
                         <div class="service-item">
                             <div class="service-inner">
                                 <div class="service-img">
-                                    <img src="img/service-2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <img src="img/business.png" class="img-fluid w-100 rounded" alt="Image">
                                 </div>
                                 <div class="service-title">
                                     <div class="service-title-name">
@@ -517,7 +530,7 @@
                         <div class="service-item">
                             <div class="service-inner">
                                 <div class="service-img">
-                                    <img src="img/service-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <img src="img/diplomatic.png" class="img-fluid w-100 rounded" alt="Image">
                                 </div>
                                 <div class="service-title">
                                     <div class="service-title-name">
@@ -541,7 +554,7 @@
                         <div class="service-item">
                             <div class="service-inner">
                                 <div class="service-img">
-                                    <img src="img/service-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <img src="img/student.png" class="img-fluid w-100 rounded" alt="Image">
                                 </div>
                                 <div class="service-title">
                                     <div class="service-title-name">
@@ -565,19 +578,19 @@
                         <div class="service-item">
                             <div class="service-inner">
                                 <div class="service-img">
-                                    <img src="img/service-2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <img src="img/relocation.png" class="img-fluid w-100 rounded" alt="Image">
                                 </div>
                                 <div class="service-title">
                                     <div class="service-title-name">
                                         <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="visa-details.php#residence-visa" class="h4 text-white mb-0">Residence Visa</a>
+                                            <a href="visa-details.php#residence-visa" class="h4 text-white mb-0">Relocation Visa</a>
                                         </div>
                                         <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="visa-details.php#residence-visa">Explore More</a>
                                     </div>
                                     <div class="service-content pb-4">
-                                        <a href="visa-details.php#residence-visa"><h4 class="text-white mb-4 py-3">Residence Visa</h4></a>
+                                        <a href="visa-details.php#residence-visa"><h4 class="text-white mb-4 py-3">Relocation Visa</h4></a>
                                         <div class="px-4">
-                                            <p class="mb-4">Residence Visa is designed for individuals who wish to live permanently in another country. It allows you to secure a permanent residence permit and travel documents to begin your life abroad.</p>
+                                            <p class="mb-4">Relocation Visa is designed for individuals who wish to live permanently in another country. It allows you to secure a permanent residence permit and travel documents to begin your life abroad.</p>
                                             <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="visa-details.php#residence-visa">Explore More</a>
                                         </div>
                                     </div>
@@ -589,7 +602,7 @@
                         <div class="service-item">
                             <div class="service-inner">
                                 <div class="service-img">
-                                    <img src="img/service-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <img src="img/tourist.png" class="img-fluid w-100 rounded" alt="Image">
                                 </div>
                                 <div class="service-title">
                                     <div class="service-title-name">
@@ -1204,11 +1217,86 @@
     <script>
         // Translation function
         function translatePage(lang) {
-            var selectField = document.querySelector("select.goog-te-combo");
-            if (selectField) {
-                selectField.value = lang;
-                selectField.dispatchEvent(new Event('change'));
+            // Show feedback to user
+            showTranslationFeedback(lang);
+            
+            // Function to attempt translation
+            function attemptTranslation() {
+                var selectField = document.querySelector("select.goog-te-combo");
+                if (selectField) {
+                    selectField.value = lang;
+                    selectField.dispatchEvent(new Event('change'));
+                    return true;
+                }
+                return false;
             }
+            
+            // Try immediate translation
+            if (attemptTranslation()) {
+                return;
+            }
+            
+            // If Google Translate isn't ready, wait and try again
+            var attempts = 0;
+            var maxAttempts = 20; // Try for up to 10 seconds
+            
+            var interval = setInterval(function() {
+                attempts++;
+                
+                if (attemptTranslation()) {
+                    clearInterval(interval);
+                    return;
+                }
+                
+                if (attempts >= maxAttempts) {
+                    clearInterval(interval);
+                    console.log('Google Translate not ready. Please try again in a moment.');
+                    
+                    // Fallback: Try to trigger Google Translate initialization
+                    if (typeof google !== 'undefined' && google.translate) {
+                        google.translate.TranslateElement({
+                            pageLanguage: 'en',
+                            includedLanguages: 'en,fr,es,de,it,pt,ar,zh,hi,ja,ko,ru,nl,sv,no,da',
+                            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                            autoDisplay: false
+                        }, 'google_translate_element');
+                        
+                        // Try again after re-initialization
+                        setTimeout(function() {
+                            attemptTranslation();
+                        }, 2000);
+                    }
+                }
+            }, 500);
+        }
+
+        // Add visual feedback for translation
+        function showTranslationFeedback(language) {
+            // Create a temporary notification
+            var notification = document.createElement('div');
+            notification.innerHTML = '<i class="fas fa-language me-2"></i>Translating to ' + getLanguageName(language) + '...';
+            notification.style.cssText = 'position:fixed;top:20px;right:20px;background:#28a745;color:white;padding:10px 20px;border-radius:5px;z-index:9999;font-size:14px;';
+            document.body.appendChild(notification);
+            
+            setTimeout(function() {
+                if (notification.parentNode) {
+                    notification.parentNode.removeChild(notification);
+                }
+            }, 3000);
+        }
+        
+        function getLanguageName(code) {
+            var languages = {
+                'en': 'English',
+                'fr': 'French',
+                'es': 'Spanish', 
+                'de': 'German',
+                'it': 'Italian',
+                'pt': 'Portuguese',
+                'ar': 'Arabic',
+                'zh': 'Chinese'
+            };
+            return languages[code] || code.toUpperCase();
         }
 
         // Share website function

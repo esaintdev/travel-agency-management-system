@@ -269,42 +269,7 @@ if (isset($_GET['edit']) && !$table_missing) {
 </head>
 
 <body>
-    <div class="container-fluid p-0">
-        <div class="row g-0">
-            <!-- Sidebar -->
-            <div class="col-md-3 col-lg-2 sidebar">
-                <div class="p-3 text-center border-bottom border-secondary">
-                    <h5 class="text-white mb-0">M25 Admin</h5>
-                    <small class="text-light">Travel & Tour Agency</small>
-                </div>
-                
-                <nav class="nav flex-column">
-                    <a class="nav-link" href="admin-dashboard.php">
-                        <i class="fas fa-tachometer-alt me-2"></i>Dashboard
-                    </a>
-                    <a class="nav-link" href="admin-clients.php">
-                        <i class="fas fa-users me-2"></i>All Clients
-                    </a>
-                    <a class="nav-link" href="admin-search.php">
-                        <i class="fas fa-search me-2"></i>Search Clients
-                    </a>
-                    <a class="nav-link active" href="admin-visa-content.php">
-                        <i class="fas fa-passport me-2"></i>Visa Content
-                    </a>
-                    <a class="nav-link" href="admin-export.php">
-                        <i class="fas fa-download me-2"></i>Export Data
-                    </a>
-                    <a class="nav-link" href="admin-settings.php">
-                        <i class="fas fa-cog me-2"></i>Settings
-                    </a>
-                    <a class="nav-link" href="admin-logout.php">
-                        <i class="fas fa-sign-out-alt me-2"></i>Logout
-                    </a>
-                </nav>
-            </div>
-            
-            <!-- Main Content -->
-            <div class="col-md-9 col-lg-10 main-content">
+    <?php include 'includes/admin-sidebar.php'; ?>
                 <!-- Top Navbar -->
                 <nav class="navbar navbar-expand-lg top-navbar">
                     <div class="container-fluid">
@@ -630,6 +595,7 @@ if (isset($_GET['edit']) && !$table_missing) {
             modal.show();
         }
     </script>
+    <?php include 'includes/admin-sidebar-close.php'; ?>
 </body>
 </html>
 
